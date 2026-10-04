@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerel — Fashion Designer, Atelier & Collections</title>
+<meta name="description" content="Kerel is a fashion house making ready to wear, made to measure and bridal pieces by hand. Explore the collections and book a fitting.">
+<meta name="theme-color" content="#0f0f0e">
+<meta property="og:title" content="Kerel — Fashion Designer, Atelier & Collections">
+<meta property="og:description" content="Clothes cut to be remembered. Collections, lookbook and fittings by appointment.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230f0f0e'/%3E%3Ctext x='32' y='47' font-size='44' text-anchor='middle' fill='%23f2eee8' font-family='Georgia,serif' font-style='italic'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="brand" aria-label="Kerel, back to top">Kerel</a>
+  <div class="header-actions">
+    <a href="#contact" class="btn btn-sm btn-light hide-sm">Book a fitting</a>
+    <button type="button" class="menu-btn" id="menuOpen" aria-haspopup="dialog" aria-controls="menu">Menu</button>
+  </div>
+</header>
+
+<!-- FULL-SCREEN MENU -->
+<dialog class="menu" id="menu" aria-label="Site menu">
+  <div class="menu-top">
+    <span class="brand">Kerel</span>
+    <button type="button" class="menu-btn" id="menuClose">Close</button>
+  </div>
+  <nav class="menu-nav" aria-label="Main">
+    <a href="#collections">Collections</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#atelier">Atelier</a>
+    <a href="#services">Services</a>
+    <a href="#designer">Designer</a>
+    <a href="#contact">Book a fitting</a>
+  </nav>
+  <p class="menu-foot"><a href="mailto:hello@kerel.studio">hello@kerel.studio</a> · <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> · <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></p>
+</dialog>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <img class="bg" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=80" alt="Model walking in a tailored look from the Kerel collection" fetchpriority="high">
+  <div class="hero-copy">
+    <div class="hero-row">
+      <p class="eyebrow">Autumn Winter collection, now showing</p>
+      <p class="hero-tag">Clothes cut to be remembered.</p>
+      <div class="actions">
+        <a href="#collections" class="btn btn-light">Explore the collection</a>
+        <a href="#contact" class="link-light">Book a fitting</a>
+      </div>
+    </div>
+    <h1><span class="wordmark">Kerel</span><span class="sr">, fashion designer</span></h1>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Ready to wear</span><span>Made to measure</span><span>Bridal</span><span>Occasion</span><span>Styling</span>
+    <span>Ready to wear</span><span>Made to measure</span><span>Bridal</span><span>Occasion</span><span>Styling</span>
+  </div>
+</div>
+
+<!-- STATEMENT -->
+<section class="statement">
+  <p>We make fewer things, and we make them properly. Every piece is drawn, cut and finished <em>by hand</em> in our own studio, so it fits the way you move.</p>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections" aria-labelledby="colTitle">
+  <div class="section-intro">
+    <h2 id="colTitle">Collections</h2>
+    <p>Four chapters from the current season. Scroll to turn the page.</p>
+  </div>
+  <div class="bands">
+    <article class="band">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2000&q=80" alt="Model in a black structured coat from Midnight Tailoring" loading="lazy">
+      <div class="band-copy">
+        <p class="eyebrow">Autumn Winter</p>
+        <h3>Midnight Tailoring</h3>
+        <p>Sharp shoulders, soft wool and a palette that stays after dark.</p>
+        <a href="#contact" class="btn btn-light" data-service="Collection enquiry" data-collection="Midnight Tailoring">Enquire about this collection</a>
+      </div>
+    </article>
+    <article class="band">
+      <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=2000&q=80" alt="Model in a flowing dress from Salt Linen" loading="lazy">
+      <div class="band-copy">
+        <p class="eyebrow">Resort</p>
+        <h3>Salt Linen</h3>
+        <p>Washed linen and silk that move with the heat and crease beautifully.</p>
+        <a href="#contact" class="btn btn-light" data-service="Collection enquiry" data-collection="Salt Linen">Enquire about this collection</a>
+      </div>
+    </article>
+    <article class="band">
+      <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=2000&q=80" alt="Model in an ivory gown from The Bridal Edit" loading="lazy">
+      <div class="band-copy">
+        <p class="eyebrow">Bridal</p>
+        <h3>The Bridal Edit</h3>
+        <p>Gowns made to measure over several fittings, finished with hand-set detail.</p>
+        <a href="#contact" class="btn btn-light" data-service="Bridal & occasion" data-collection="The Bridal Edit">Enquire about this collection</a>
+      </div>
+    </article>
+    <article class="band">
+      <img src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=2000&q=80" alt="Model in an evening dress from Evening Studies" loading="lazy">
+      <div class="band-copy">
+        <p class="eyebrow">Occasion</p>
+        <h3>Evening Studies</h3>
+        <p>Drape, line and restraint for the rooms you remember.</p>
+        <a href="#contact" class="btn btn-light" data-service="Collection enquiry" data-collection="Evening Studies">Enquire about this collection</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section class="lookbook" id="lookbook" aria-labelledby="lbTitle">
+  <div class="section-intro row">
+    <div><h2 id="lbTitle">Lookbook</h2><p>Select any look to see it larger.</p></div>
+    <div class="rail-ctrl">
+      <button type="button" class="ctrl" id="railPrev" aria-label="Scroll lookbook left">←</button>
+      <button type="button" class="ctrl" id="railNext" aria-label="Scroll lookbook right">→</button>
+    </div>
+  </div>
+  <ul class="rail" id="rail" tabindex="0" aria-label="Lookbook images, scrollable">
+    <li><button type="button" class="look" data-title="Charcoal overcoat" data-big="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1600&q=85"><span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=80" alt="Model in a long charcoal overcoat"></span><span class="cap">Charcoal overcoat <i>Wool</i></span></button></li>
+    <li><button type="button" class="look" data-title="Column dress" data-big="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=85"><span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Model in a slim column dress"></span><span class="cap">Column dress <i>Crepe</i></span></button></li>
+    <li><button type="button" class="look" data-title="Ink blazer" data-big="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=85"><span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Model in a dark tailored blazer"></span><span class="cap">Ink blazer <i>Twill</i></span></button></li>
+    <li><button type="button" class="look" data-title="Resort shirt dress" data-big="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=85"><span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=80" alt="Model in a light shirt dress outdoors"></span><span class="cap">Resort shirt dress <i>Linen</i></span></button></li>
+    <li><button type="button" class="look" data-title="Bias slip" data-big="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=85"><span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Two models in contemporary tailored looks"></span><span class="cap">Bias slip <i>Silk</i></span></button></li>
+    <li><button type="button" class="look" data-title="Wide trouser set" data-big="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=85"><span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80" alt="Folded garments and fabrics on a table"></span><span class="cap">Wide trouser set <i>Cotton</i></span></button></li>
+  </ul>
+</section>
+
+<!-- ATELIER -->
+<section class="atelier" id="atelier" aria-labelledby="atTitle">
+  <div class="atelier-img"><img loading="lazy" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=1400&q=80" alt="Rail of finished garments in the atelier"></div>
+  <div class="atelier-text">
+    <h2 id="atTitle">Inside the <em>atelier</em></h2>
+    <p class="lead">Nothing leaves the studio until it moves the way it should. This is the path every piece takes.</p>
+    <ul class="craft">
+      <li><h3>Sketch</h3><p>Every piece starts as a drawing and a conversation about how you want to feel in it.</p></li>
+      <li><h3>Pattern</h3><p>Patterns are cut by hand to your proportions, not adjusted from a standard size.</p></li>
+      <li><h3>Toile</h3><p>A trial version in plain cotton lets us perfect the line before we touch the final cloth.</p></li>
+      <li><h3>Fitting</h3><p>We refine the garment on you, adjusting balance, length and ease until it sits right.</p></li>
+      <li><h3>Finish</h3><p>Hand-stitched hems, pressed seams and fastenings set by hand complete each piece.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services" aria-labelledby="svTitle">
+  <div class="section-intro"><h2 id="svTitle">Ways to wear Kerel</h2><p>Choose how you want to work with us.</p></div>
+  <div class="svc">
+    <ul class="svc-list" id="svcList">
+      <li data-img="0">
+        <h3>Ready to wear</h3>
+        <p>Seasonal pieces in a considered size range, finished to the same standard as our commissions.</p>
+        <a href="#contact" class="link" data-service="Ready to wear">Enquire</a>
+      </li>
+      <li data-img="1">
+        <h3>Made to measure</h3>
+        <p>Pieces cut to your body and your brief, with two fittings included.</p>
+        <a href="#contact" class="link" data-service="Made to measure">Enquire</a>
+      </li>
+      <li data-img="2">
+        <h3>Bridal &amp; occasion</h3>
+        <p>Gowns and eveningwear designed around you, from the first sketch to the final fitting.</p>
+        <a href="#contact" class="link" data-service="Bridal & occasion">Enquire</a>
+      </li>
+      <li data-img="3">
+        <h3>Styling</h3>
+        <p>A private session to build a wardrobe that works, using pieces you own and pieces we make.</p>
+        <a href="#contact" class="link" data-service="Styling">Enquire</a>
+      </li>
+    </ul>
+    <div class="svc-media" aria-hidden="true">
+      <img class="on" loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" alt="">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=1200&q=80" alt="">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- DESIGNER -->
+<section class="designer" id="designer" aria-labelledby="dsTitle">
+  <img class="bg" loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2000&q=80" alt="Portrait of the designer in the studio">
+  <div class="designer-copy">
+    <p class="eyebrow">The designer</p>
+    <h2 id="dsTitle">I design for the person, <em>not the trend.</em></h2>
+    <p>I trained in tailoring before I ever opened a sketchbook, and it still shapes how I work. Clothes should disappear into a life and make it feel bigger. That is the only brief I take seriously.</p>
+    <p class="sign">Kerel</p>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section class="press" aria-label="Press and client words">
+  <figure><blockquote>“The most confident cut I have worn in years.”</blockquote><figcaption>Fashion editor, publication name</figcaption></figure>
+  <figure><blockquote>“A fitting that felt more like a conversation than a service.”</blockquote><figcaption>Bridal client</figcaption></figure>
+  <figure><blockquote>“Quiet clothes with a very loud presence.”</blockquote><figcaption>Stylist, magazine name</figcaption></figure>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="ctTitle">
+  <div class="contact-info">
+    <h2 id="ctTitle">Book a <em>fitting</em></h2>
+    <p class="lead">Fittings are by appointment. Tell us what you are looking for and we will reply within two working days.</p>
+    <dl class="facts">
+      <div><dt>Studio</dt><dd>Studio address goes here</dd></div>
+      <div><dt>Hours</dt><dd>Tuesday to Saturday, by appointment</dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:hello@kerel.studio">hello@kerel.studio</a></dd></div>
+      <div><dt>Follow</dt><dd><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> · <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></dd></div>
+    </dl>
+  </div>
+  <form id="form" novalidate>
+    <label>Name<input type="text" name="name" autocomplete="name" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+    <label>I am interested in
+      <select name="service" id="service">
+        <option>Ready to wear</option><option>Made to measure</option><option>Bridal &amp; occasion</option><option>Styling</option><option>Collection enquiry</option><option>Press &amp; collaborations</option>
+      </select>
+    </label>
+    <label>Preferred date <small>(optional)</small><input type="date" name="date" id="date"></label>
+    <label>Message<textarea name="message" id="message" rows="4" required></textarea></label>
+    <label class="check"><input type="checkbox" name="consent" required> I agree to Kerel using my details to reply to this enquiry, as described in the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</label>
+    <p class="error" id="formError" role="alert"></p>
+    <button type="submit" class="btn">Request appointment</button>
+    <p class="success" id="formOk" role="status" hidden>Thank you. Your request has been received and we will reply within two working days.</p>
+  </form>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news" aria-labelledby="nwTitle">
+  <div>
+    <h2 id="nwTitle">First sight of every collection.</h2>
+    <p>One email when a new collection or a private sale is announced. No more.</p>
+  </div>
+  <form id="newsForm" novalidate>
+    <label class="sr" for="newsEmail">Email address</label>
+    <div class="news-row"><input type="email" id="newsEmail" autocomplete="email" placeholder="Your email address" required><button type="submit" class="btn btn-light">Subscribe</button></div>
+    <label class="check"><input type="checkbox" id="newsConsent" required> I agree to receive emails from Kerel and can unsubscribe at any time. See the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</label>
+    <p class="error" id="newsError" role="alert"></p>
+    <p class="success" id="newsOk" role="status" hidden>You are on the list. Thank you.</p>
+  </form>
+</section>
+
+<!-- FAQ -->
+<section class="faq" aria-labelledby="fqTitle">
+  <h2 id="fqTitle">Good to know</h2>
+  <details><summary>How do I find my size?</summary><p>Use our <button type="button" class="inline" data-legal="size">size guide</button> for ready to wear. For made to measure, we take your measurements in person or guide you through taking them at home.</p></details>
+  <details><summary>How long does a made to measure piece take?</summary><p>Allow six to ten weeks from your first fitting. Bridal and evening commissions are scheduled individually, so please enquire early.</p></details>
+  <details><summary>Do you ship internationally?</summary><p>Yes. Delivery times and costs are confirmed when you order. Read the <button type="button" class="inline" data-legal="shipping">shipping and returns policy</button> for details.</p></details>
+  <details><summary>Can I return or alter a piece?</summary><p>Ready to wear can be returned within 14 days if unworn. Made to measure pieces are made for you, so we offer alterations instead of returns.</p></details>
+  <details><summary>How should I care for my garment?</summary><p>Every piece arrives with a care card. As a rule, dry clean tailoring, hand wash silk and linen, and steam rather than iron where you can.</p></details>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="foot-top">
+    <p class="foot-note">Made with care in small batches. We work with mills that publish where their cloth comes from, and we keep offcuts for future pieces.</p>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#collections">Collections</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#contact">Contact</a>
+      <button type="button" data-legal="size">Size guide</button>
+      <button type="button" data-legal="shipping">Shipping &amp; returns</button>
+      <button type="button" data-legal="privacy">Privacy</button>
+      <button type="button" data-legal="terms">Terms</button>
+      <button type="button" id="cookieSettings">Cookie settings</button>
+    </nav>
+  </div>
+  <p class="foot-word" aria-hidden="true">Kerel</p>
+  <p class="foot-legal">© <span id="year"></span> Kerel. All designs and images are protected by copyright and may not be reproduced without written permission. Preview photography from Unsplash.</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <button type="button" class="dlg-close" id="lbClose" aria-label="Close">✕</button>
+  <button type="button" class="lb-nav prev" id="lbPrev" aria-label="Previous look">←</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button type="button" class="lb-nav next" id="lbNext" aria-label="Next look">→</button>
+</dialog>
+
+<!-- LEGAL -->
+<dialog class="legal" id="legal" aria-label="Legal and customer information">
+  <button type="button" class="dlg-close" id="legalClose" aria-label="Close">✕</button>
+  <section id="privacy" hidden>
+    <h2>Privacy Policy</h2>
+    <p>We collect only what you submit through the appointment and newsletter forms (name, email, optional date and message) and use it to reply to you and, if you opt in, to send collection news. We do not sell your data.</p>
+    <p>Essential storage remembers your cookie choice. Analytics load only if you accept. You may ask to access, correct or delete your data, or unsubscribe at any time, by emailing hello@kerel.studio.</p>
+    <p><small>Template text. Have it reviewed against the laws that apply to you (for example GDPR or NDPR) before launch.</small></p>
+  </section>
+  <section id="terms" hidden>
+    <h2>Terms of Use</h2>
+    <p>All designs, photographs and text on this site belong to Kerel unless stated otherwise and may not be copied or reused without written permission.</p>
+    <p>Made to measure and bridal commissions are confirmed by a written agreement and deposit. Descriptions and prices are guides and may change. Liability is limited to the amount paid for the relevant order.</p>
+    <p><small>Template text. Have it reviewed by a legal professional before launch.</small></p>
+  </section>
+  <section id="shipping" hidden>
+    <h2>Shipping &amp; Returns</h2>
+    <p>Delivery times and costs are confirmed at the time of order. Customers are responsible for any import duties or taxes in their country.</p>
+    <p>Ready to wear may be returned within 14 days of delivery if unworn, with tags attached. Made to measure, bridal and altered pieces are made for you and are not eligible for return, but we will gladly adjust the fit.</p>
+    <p><small>Template text. Replace with your actual policy and check consumer law for each market you sell to.</small></p>
+  </section>
+  <section id="size" hidden>
+    <h2>Size guide</h2>
+    <p>Measurements are in centimetres. If you are between sizes, we suggest sizing up, or book a fitting for a made to measure piece.</p>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">Size</th><th scope="col">Bust</th><th scope="col">Waist</th><th scope="col">Hip</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">XS</th><td>80</td><td>62</td><td>88</td></tr>
+        <tr><th scope="row">S</th><td>84</td><td>66</td><td>92</td></tr>
+        <tr><th scope="row">M</th><td>88</td><td>70</td><td>96</td></tr>
+        <tr><th scope="row">L</th><td>94</td><td>76</td><td>102</td></tr>
+        <tr><th scope="row">XL</th><td>100</td><td>82</td><td>108</td></tr>
+      </tbody>
+    </table></div>
+    <p><small>Sample values. Replace with your own size chart.</small></p>
+  </section>
+</dialog>
+
+<!-- COOKIES -->
+<div class="cookie" id="cookie" role="region" aria-label="Cookie consent" hidden>
+  <p>We use essential storage to run this site. With your consent we may also use analytics to improve it. See the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</p>
+  <div class="cookie-actions"><button type="button" class="btn btn-sm btn-line" id="cookieNo">Decline</button><button type="button" class="btn btn-sm" id="cookieYes">Accept</button></div>
+</div>
+
+<button type="button" class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
