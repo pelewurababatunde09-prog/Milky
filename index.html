@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milky — Website Templates</title>
+<meta name="description" content="Clean, responsive website templates for developers and small businesses. Free and premium.">
+<meta name="theme-color" content="#f6f3ec">
+<meta property="og:title" content="Milky — Website Templates">
+<meta property="og:description" content="Clean, responsive website templates for developers and small businesses. Free and premium.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d1b17'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' fill='%23f6f3ec' font-family='Georgia,serif'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="brand" aria-label="Milky, back to top">Milky<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="headerNav" aria-label="Open menu"><i></i><i></i></button>
+    <nav class="header-nav" id="headerNav" aria-label="Main">
+      <a href="#templates">Templates</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-inner">
+    <div class="hero-main">
+      <h1 class="hero-title" id="heroTitle">Ready to use<br>Website Templates</h1>
+      <p class="hero-sub">Clean, responsive, and ready to ship. Built for developers and businesses who don't want to start from scratch.</p>
+
+      <div class="search-wrap" id="searchWrap">
+        <form class="search-bar" role="search" autocomplete="off" id="searchForm">
+          <span class="search-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="text" class="search-input" id="searchInput" placeholder="Search templates, categories, or vibes" aria-label="Search templates" aria-controls="templateGrid">
+          <button type="button" class="search-clear" id="searchClear" aria-label="Clear search" hidden>✕</button>
+          <button type="button" class="search-suggest-toggle" id="suggestToggle" aria-label="Show suggestions" aria-expanded="false" aria-controls="searchSuggestions">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-suggestions" id="searchSuggestions" hidden>
+          <p class="suggest-label">Popular categories</p>
+          <a href="#templates" class="suggest-item" data-filter="portfolio">
+            <span class="suggest-copy">
+              <span class="suggest-title">Portfolio</span>
+              <span class="suggest-desc">For developers and creatives</span>
+            </span>
+          </a>
+          <a href="#templates" class="suggest-item" data-filter="business">
+            <span class="suggest-copy">
+              <span class="suggest-title">Small business</span>
+              <span class="suggest-desc">Shops, salons, and services</span>
+            </span>
+          </a>
+          <a href="#templates" class="suggest-item" data-filter="food">
+            <span class="suggest-copy">
+              <span class="suggest-title">Food &amp; Restaurant</span>
+              <span class="suggest-desc">Menus, cafés, and delivery</span>
+            </span>
+          </a>
+          <a href="#templates" class="suggest-item" data-filter="education">
+            <span class="suggest-copy">
+              <span class="suggest-title">Education</span>
+              <span class="suggest-desc">Schools, tutors, and courses</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="hint">Tip: press <kbd>/</kbd> anywhere to search.</p>
+    </div>
+
+    <ul class="promises" aria-label="Why Milky">
+      <li><strong>Free means free</strong><span>Take the free templates and use them. They're yours.</span></li>
+      <li><strong>Clean code</strong><span>No bloated frameworks. Plain HTML, CSS and JavaScript.</span></li>
+      <li><strong>Works everywhere</strong><span>Responsive layouts that hold up on any device.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TEMPLATES ============ -->
+<section class="market" id="templates" aria-labelledby="marketTitle">
+  <div class="market-inner">
+    <div class="market-head">
+      <h2 id="marketTitle">Browse templates</h2>
+      <p class="muted">Filter by price or category, or use the search above.</p>
+    </div>
+
+    <div class="market-layout">
+
+      <!-- Filters -->
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="filters-head">
+          <h3>Filters</h3>
+          <button type="button" class="text-btn" id="clearFilters">Clear all</button>
+        </div>
+        <fieldset>
+          <legend>Price</legend>
+          <label class="opt"><input type="radio" name="price" value="all" checked><span>All</span><small data-count-price="all"></small></label>
+          <label class="opt"><input type="radio" name="price" value="free"><span>Free</span><small data-count-price="free"></small></label>
+          <label class="opt"><input type="radio" name="price" value="paid"><span>Premium</span><small data-count-price="paid"></small></label>
+        </fieldset>
+        <fieldset>
+          <legend>Category</legend>
+          <label class="opt"><input type="radio" name="cat" value="all" checked><span>All categories</span><small data-count-cat="all"></small></label>
+          <label class="opt"><input type="radio" name="cat" value="portfolio"><span>Portfolio</span><small data-count-cat="portfolio"></small></label>
+          <label class="opt"><input type="radio" name="cat" value="business"><span>Business</span><small data-count-cat="business"></small></label>
+          <label class="opt"><input type="radio" name="cat" value="food"><span>Food</span><small data-count-cat="food"></small></label>
+          <label class="opt"><input type="radio" name="cat" value="education"><span>Education</span><small data-count-cat="education"></small></label>
+        </fieldset>
+        <button type="button" class="btn btn-primary apply-btn" id="applyFilters">Show results</button>
+      </aside>
+      <div class="scrim" id="scrim" hidden></div>
+
+      <!-- Results -->
+      <div class="results">
+        <div class="toolbar">
+          <p class="count" id="resultCount" role="status" aria-live="polite"></p>
+          <button type="button" class="btn btn-ghost filter-open" id="filterOpen" aria-expanded="false" aria-controls="filters">Filters</button>
+          <label class="sort">
+            <span>Sort</span>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="az">Name, A to Z</option>
+              <option value="free">Free first</option>
+              <option value="paid">Premium first</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- ============ TEMPLATE GRID ============ -->
+        <div class="grid" id="templateGrid">
+
+          <a href="templates/halo/index.html" class="card" data-tags="free portfolio">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80" alt="Minimal portfolio template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-free">Free</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Halo</h3>
+              <p class="card-desc">Minimal portfolio for developers.</p>
+            </div>
+          </a>
+
+          <a href="templates/slate/index.html" class="card" data-tags="paid portfolio">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1000&q=80" alt="Designer portfolio template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-paid">Premium</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Slate</h3>
+              <p class="card-desc">Bold portfolio for creatives.</p>
+            </div>
+          </a>
+
+          <a href="templates/photo-editorial/index.html" class="card" data-tags="free business">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1618556450991-2f1af64e8191?auto=format&fit=crop&w=1000&q=80" alt="Small business template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-free">Free</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Cedar</h3>
+              <p class="card-desc">Landing page for small business.</p>
+            </div>
+          </a>
+
+          <a href="templates/photo-cinematic/index.html" class="card" data-tags="paid business">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="Salon template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-paid">Premium</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Velvet</h3>
+              <p class="card-desc">Elegant site for salons and studios.</p>
+            </div>
+          </a>
+
+          <a href="templates/basil/index.html" class="card" data-tags="free food">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80" alt="Restaurant template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-free">Free</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Basil</h3>
+              <p class="card-desc">Restaurant site with digital menu.</p>
+            </div>
+          </a>
+
+          <a href="templates/ember/index.html" class="card" data-tags="paid food">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" alt="Café template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-paid">Premium</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Ember</h3>
+              <p class="card-desc">Moody café site with gallery.</p>
+            </div>
+          </a>
+
+          <a href="templates/quill/index.html" class="card" data-tags="free education">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=80" alt="Education template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-free">Free</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Quill</h3>
+              <p class="card-desc">Simple site for tutors and courses.</p>
+            </div>
+          </a>
+
+          <a href="templates/nova/index.html" class="card" data-tags="paid portfolio">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=80" alt="Developer portfolio template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-paid">Premium</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Nova</h3>
+              <p class="card-desc">Dark portfolio for full-stack devs.</p>
+            </div>
+          </a>
+
+          <a href="templates/oak/index.html" class="card" data-tags="free business">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1000&q=80" alt="Agency template" width="1000" height="750" loading="lazy" decoding="async">
+              <span class="card-badge badge-free">Free</span>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Oak</h3>
+              <p class="card-desc">Clean agency landing page.</p>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="empty" id="emptyState" hidden>
+          <h3>No templates match that.</h3>
+          <p class="muted">Try a different word, or clear the filters to see everything.</p>
+          <button type="button" class="btn btn-primary" id="emptyClear">Clear search and filters</button>
+        </div>
+
+        <div class="more" id="moreWrap" hidden>
+          <p class="muted" id="moreStatus"></p>
+          <button type="button" class="btn btn-ghost" id="moreBtn">Show more templates</button>
+        </div>
+
+        <noscript><p class="muted">JavaScript is off, so search and filters are unavailable. All templates are listed above.</p></noscript>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how" aria-labelledby="howTitle">
+  <div class="how-inner">
+    <h2 id="howTitle">How it works</h2>
+    <ol class="how-list">
+      <li><h3>Browse and preview</h3><p>Open any template to see it live before you decide.</p></li>
+      <li><h3>Take it</h3><p>Free templates are yours to use. Premium ones are for when you want something more.</p></li>
+      <li><h3>Make it yours</h3><p>Edit the HTML, CSS and JavaScript in any editor. No build tools required.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ LICENCE ============ -->
+<section class="licence" aria-labelledby="licTitle">
+  <div class="licence-inner">
+    <h2 id="licTitle">Simple licensing</h2>
+    <p>Use free templates for personal and client projects. You may edit them freely, but you may not resell or redistribute them as templates. Premium templates come with their own licence terms.</p>
+    <button type="button" class="link-btn" data-legal="licence">Read the full licence</button>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <span class="eyebrow">About</span>
+    <h2>Built by a developer who got tired of starting from scratch.</h2>
+    <p>Every template on this page is something I've either used myself or built for a client. Clean code, no bloated frameworks, works on any device. Take the free ones — they're yours. If you want something more, reach out.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" aria-labelledby="faqTitle">
+  <div class="faq-inner">
+    <h2 id="faqTitle">Questions</h2>
+    <details><summary>Are the free templates really free?</summary><p>Yes. You can use them in your own projects without paying. The only restriction is that you can't resell or redistribute them as templates.</p></details>
+    <details><summary>Can I use a template for a client?</summary><p>Yes. Free templates can be used for client work. For premium templates, check the licence that comes with the template.</p></details>
+    <details><summary>Are the templates accessible?</summary><p>They're built with semantic HTML and keyboard-friendly patterns. Always test with your own content, since changing colours or text can affect contrast and readability.</p></details>
+    <details><summary>Can you build something custom for me?</summary><p>I take on a handful of client projects each month. Use the contact options below to tell me what you need.</p></details>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="eyebrow">Contact</span>
+    <h2>Want a custom build?</h2>
+    <p>I take on a handful of client projects each month. Tell me what you need.</p>
+    <div class="contact-links">
+      <a href="mailto:hello@example.com" class="contact-btn primary">Email me</a>
+      <a href="https://wa.me/2349162692084" class="contact-btn ghost" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 Thani. Templates for builders.</p>
+    <div class="footer-links">
+      <a href="#templates">Templates</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button type="button" data-legal="privacy">Privacy</button>
+      <button type="button" data-legal="terms">Terms</button>
+      <button type="button" data-legal="licence">Licence</button>
+      <button type="button" id="cookieSettings">Cookie settings</button>
+    </div>
+  </div>
+</footer>
+
+<!-- Legal dialog -->
+<dialog class="legal" id="legal" aria-label="Legal information">
+  <button type="button" class="dlg-close" id="legalClose" aria-label="Close">✕</button>
+  <section id="privacy" hidden>
+    <h2>Privacy Policy</h2>
+    <p>This site does not ask you to create an account and does not collect personal data through forms. If you contact me by email or WhatsApp, I use your details only to reply to you and do not sell or share them.</p>
+    <p>Essential storage is used to remember your cookie choice. Analytics, if added in future, will load only after you accept. You can ask me to access, correct or delete any data I hold about you at hello@example.com.</p>
+    <p><small>Template text. Have it reviewed against the laws that apply to you (for example GDPR or NDPR) before launch.</small></p>
+  </section>
+  <section id="terms" hidden>
+    <h2>Terms of Use</h2>
+    <p>Templates are provided as is, without warranty. You are responsible for testing a template, including its accessibility and performance, with your own content before launching it.</p>
+    <p>All templates and site content remain the property of Thani unless stated otherwise. Premium templates are subject to the terms shown with each template. To the extent allowed by law, liability is limited to the amount paid for the relevant template.</p>
+    <p><small>Template text. Have it reviewed by a legal professional before launch.</small></p>
+  </section>
+  <section id="licence" hidden>
+    <h2>Licence</h2>
+    <p><strong>Free templates.</strong> You may use them in personal and client projects and edit them as you like. You may not resell, redistribute or share them as templates, or claim them as your own template product.</p>
+    <p><strong>Premium templates.</strong> Each premium template is covered by the licence supplied with it. Please read it before use.</p>
+    <p><small>Template text. Replace with your final licence wording and have it reviewed before launch.</small></p>
+  </section>
+</dialog>
+
+<!-- Cookie banner -->
+<div class="cookie" id="cookie" role="region" aria-label="Cookie consent" hidden>
+  <p>I use essential storage to run this site. With your consent, I may also use analytics to improve it. See the <button type="button" class="link-btn" data-legal="privacy">Privacy Policy</button>.</p>
+  <div class="cookie-actions"><button type="button" class="btn btn-ghost btn-sm" id="cookieNo">Decline</button><button type="button" class="btn btn-primary btn-sm" id="cookieYes">Accept</button></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button type="button" class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
