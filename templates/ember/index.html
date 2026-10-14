@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember & Salt — Wood-Fired Kitchen</title>
+<meta name="description" content="Ember & Salt is a wood-fired kitchen serving seasonal plates built around the grill. View the menu, see opening hours and reserve a table.">
+<meta name="theme-color" content="#f4ede1">
+<meta property="og:title" content="Ember & Salt — Wood-Fired Kitchen">
+<meta property="og:description" content="Seasonal plates cooked over fire. Reserve a table online.">
+<meta property="og:type" content="restaurant">
+<meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23b4492c'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23f4ede1' font-family='Georgia,serif' font-style='italic'%3EE%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Ember & Salt","servesCuisine":"Wood-fired, seasonal","priceRange":"$$","telephone":"+1 000 000 0000","email":"hello@embersalt.example","address":{"@type":"PostalAddress","streetAddress":"Street address goes here","addressLocality":"City","postalCode":"Postcode","addressCountry":"Country"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday"],"opens":"17:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"12:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"21:00"}],"acceptsReservations":"True"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="brand" aria-label="Ember and Salt, back to top">Ember <span>&amp;</span> Salt</a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#menu">Menu</a>
+    <a href="#story">Our story</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+    <a href="#reserve" class="btn btn-sm nav-cta">Reserve a table</a>
+  </nav>
+  <button type="button" class="nav-btn" id="navBtn" aria-expanded="false" aria-controls="nav" aria-label="Open navigation"><i></i><i></i></button>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span class="js-status">Open Tuesday to Sunday</span></p>
+    <h1>Fire, salt<br>and <em>patience.</em></h1>
+    <p class="hero-sub">A wood-fired kitchen serving seasonal plates built around the grill. Walk-ins are welcome, tables are recommended.</p>
+    <form class="quick" id="quick" aria-label="Quick table search">
+      <label>Date<input type="date" id="qDate" required></label>
+      <label>Guests
+        <select id="qGuests">
+          <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option value="9+">9 or more</option>
+        </select>
+      </label>
+      <button type="submit" class="btn">Find a table</button>
+    </form>
+    <p class="hero-links"><a href="#menu" class="link">See the menu</a><a href="#visit" class="link">Hours and location</a></p>
+  </div>
+  <figure class="hero-img">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" alt="A plated main course served at the restaurant" fetchpriority="high">
+  </figure>
+</section>
+
+<!-- INFO STRIP -->
+<section class="strip" aria-label="At a glance">
+  <div><span class="k">Today</span><strong class="js-status">Open Tuesday to Sunday</strong></div>
+  <div><span class="k">Find us</span><strong>Street address goes here</strong></div>
+  <div><span class="k">Call</span><strong><a href="tel:+10000000000">+1 000 000 0000</a></strong></div>
+  <div><span class="k">Walk-ins</span><strong>Welcome at the bar</strong></div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story" aria-labelledby="stTitle">
+  <div class="story-text">
+    <h2 id="stTitle">Everything starts with the <em>fire.</em></h2>
+    <p>We cook over oak and olive wood because it is the one ingredient that makes everything taste like itself, only more. The menu is short, changes with the weeks, and leans on the growers and fishermen we know by name.</p>
+    <p>Come hungry, share plates and stay longer than you meant to.</p>
+  </div>
+  <div class="story-imgs">
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" alt="Chef plating a dish in the open kitchen"><figcaption>The pass, every night</figcaption></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Warmly lit dining room with set tables"><figcaption>The dining room</figcaption></figure>
+  </div>
+</section>
+
+<!-- SIGNATURES -->
+<section class="sig" aria-labelledby="sgTitle">
+  <div class="head"><h2 id="sgTitle">From the fire</h2><p class="muted">Three dishes people come back for.</p></div>
+  <div class="sig-grid">
+    <article><div class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Grilled ribeye steak on a board"></div><h3>Dry-aged ribeye</h3><p>Thirty-five days on the bone, finished over embers with salted butter.</p></article>
+    <article><div class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80" alt="Whole grilled fish with lemon and herbs"></div><h3>Whole sea bream</h3><p>Cooked whole in the wood oven with lemon, fennel and olive oil.</p></article>
+    <article><div class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80" alt="Roasted vegetable dish with fresh herbs"></div><h3>Fire-roasted cauliflower</h3><p>Charred whole, with tahini, lemon and toasted seeds. Vegan and gluten-free.</p></article>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu" aria-labelledby="mnTitle">
+  <div class="head row">
+    <div><h2 id="mnTitle">The menu</h2><p class="muted">Seasonal and short. Dishes change with the weeks.</p></div>
+    <div class="diets" role="group" aria-label="Dietary filters">
+      <button type="button" class="chip" aria-pressed="false" data-diet="v">Vegetarian</button>
+      <button type="button" class="chip" aria-pressed="false" data-diet="vg">Vegan</button>
+      <button type="button" class="chip" aria-pressed="false" data-diet="gf">Gluten-free</button>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Menu sections" id="tabs">
+    <button role="tab" id="tab-starters" aria-controls="panel-starters" aria-selected="true">Starters</button>
+    <button role="tab" id="tab-mains" aria-controls="panel-mains" aria-selected="false" tabindex="-1">Mains</button>
+    <button role="tab" id="tab-sides" aria-controls="panel-sides" aria-selected="false" tabindex="-1">Sides</button>
+    <button role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1">Desserts</button>
+    <button role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Drinks</button>
+  </div>
+
+  <div class="panels">
+    <ul class="panel" role="tabpanel" id="panel-starters" aria-labelledby="tab-starters">
+      <li class="dish" data-diet="v vg"><div class="row"><h3>Burnt aubergine</h3><i class="dots"></i><span class="price">$12</span></div><p>Smoked tahini, pomegranate, warm flatbread.</p><p class="tags"><span>Vegetarian</span><span>Vegan</span></p></li>
+      <li class="dish" data-diet="gf"><div class="row"><h3>Charred octopus</h3><i class="dots"></i><span class="price">$18</span></div><p>Potato, paprika oil, grilled lemon.</p><p class="tags"><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="v"><div class="row"><h3>Whipped feta</h3><i class="dots"></i><span class="price">$11</span></div><p>Thyme honey, toasted walnuts, sourdough.</p><p class="tags"><span>Vegetarian</span></p></li>
+    </ul>
+    <ul class="panel" role="tabpanel" id="panel-mains" aria-labelledby="tab-mains" hidden>
+      <li class="dish" data-diet="gf"><div class="row"><h3>Whole sea bream</h3><i class="dots"></i><span class="price">$34</span></div><p>Wood-oven roasted, fennel, lemon, olive oil.</p><p class="tags"><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="gf"><div class="row"><h3>Dry-aged ribeye</h3><i class="dots"></i><span class="price">$46</span></div><p>On the bone, salted butter, charred shallot.</p><p class="tags"><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="v vg gf"><div class="row"><h3>Fire-roasted cauliflower</h3><i class="dots"></i><span class="price">$22</span></div><p>Tahini, lemon, toasted seeds.</p><p class="tags"><span>Vegetarian</span><span>Vegan</span><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="gf"><div class="row"><h3>Slow lamb shoulder</h3><i class="dots"></i><span class="price">$32</span></div><p>Cooked for six hours, white beans, salsa verde.</p><p class="tags"><span>Gluten-free</span></p></li>
+    </ul>
+    <ul class="panel" role="tabpanel" id="panel-sides" aria-labelledby="tab-sides" hidden>
+      <li class="dish" data-diet="v vg gf"><div class="row"><h3>Hand-cut chips</h3><i class="dots"></i><span class="price">$7</span></div><p>Sea salt, rosemary.</p><p class="tags"><span>Vegetarian</span><span>Vegan</span><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="v vg gf"><div class="row"><h3>Charred greens</h3><i class="dots"></i><span class="price">$8</span></div><p>Garlic, chilli, lemon.</p><p class="tags"><span>Vegetarian</span><span>Vegan</span><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="v gf"><div class="row"><h3>Ember potatoes</h3><i class="dots"></i><span class="price">$8</span></div><p>Cooked in the coals, cultured butter, chives.</p><p class="tags"><span>Vegetarian</span><span>Gluten-free</span></p></li>
+    </ul>
+    <ul class="panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" hidden>
+      <li class="dish" data-diet="v"><div class="row"><h3>Burnt honey tart</h3><i class="dots"></i><span class="price">$10</span></div><p>Crème fraîche, sea salt.</p><p class="tags"><span>Vegetarian</span></p></li>
+      <li class="dish" data-diet="v gf"><div class="row"><h3>Smoked chocolate pot</h3><i class="dots"></i><span class="price">$10</span></div><p>Olive oil, flaky salt.</p><p class="tags"><span>Vegetarian</span><span>Gluten-free</span></p></li>
+      <li class="dish" data-diet="v vg gf"><div class="row"><h3>Charred peach</h3><i class="dots"></i><span class="price">$9</span></div><p>Coconut cream, toasted almonds.</p><p class="tags"><span>Vegetarian</span><span>Vegan</span><span>Gluten-free</span></p></li>
+    </ul>
+    <ul class="panel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" hidden>
+      <li class="dish" data-diet=""><div class="row"><h3>House negroni</h3><i class="dots"></i><span class="price">$13</span></div><p>Smoked vermouth, bitter orange.</p></li>
+      <li class="dish" data-diet=""><div class="row"><h3>Natural orange wine</h3><i class="dots"></i><span class="price">$12</span></div><p>By the glass. Ask for today's bottle.</p></li>
+      <li class="dish" data-diet="v vg gf"><div class="row"><h3>Fig leaf spritz</h3><i class="dots"></i><span class="price">$8</span></div><p>Alcohol-free, tonic, citrus.</p><p class="tags"><span>Vegetarian</span><span>Vegan</span><span>Gluten-free</span></p></li>
+    </ul>
+    <p class="empty" id="menuEmpty" hidden>No dishes in this section match those filters. Try removing one.</p>
+  </div>
+  <p class="allergy" id="menuCount" role="status" aria-live="polite"></p>
+  <p class="allergy">Please tell your server about any allergies or intolerances. Our kitchen handles nuts, gluten, dairy, eggs, fish and shellfish, so we cannot guarantee any dish is free of them. <button type="button" class="inline" data-legal="allergens">Read the allergen notice</button>. Prices include tax.</p>
+</section>
+
+<!-- SOURCING -->
+<section class="source" aria-labelledby="srTitle">
+  <figure class="source-img"><img loading="lazy" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80" alt="Skewers cooking over an open flame"></figure>
+  <div class="source-text">
+    <h2 id="srTitle">Where it <em>comes from</em></h2>
+    <p class="lead">We keep the list short and the relationships long. Every supplier is someone we have met.</p>
+    <ul class="list">
+      <li><h3>Vegetables</h3><p>From a family-run farm within an hour of the kitchen, delivered twice a week.</p></li>
+      <li><h3>Fish</h3><p>Bought from day boats, so what is on the menu is what was caught.</p></li>
+      <li><h3>Meat</h3><p>From pasture-raised herds, dry-aged in-house and cooked over wood.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events" id="events" aria-labelledby="evTitle">
+  <div class="head"><h2 id="evTitle">Gather here</h2><p class="muted">For the nights worth planning.</p></div>
+  <div class="ev-grid">
+    <article><h3>Private dining</h3><p>Our back room seats up to twenty-four for dinners, birthdays and celebrations, with a set menu designed around you.</p><a href="#reserve" class="link" data-occasion="Private dining enquiry">Enquire</a></article>
+    <article><h3>Chef's table</h3><p>A tasting menu cooked at the pass. Six guests each evening, Thursday to Saturday.</p><a href="#reserve" class="link" data-occasion="Chef's table">Request a seat</a></article>
+    <article><h3>Gift cards</h3><p>Give a table instead of a thing. Cards are sent by email, and terms are set out in our terms of use.</p><a href="#reserve" class="link" data-occasion="Gift card enquiry">Ask about gift cards</a></article>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery" aria-labelledby="glTitle">
+  <div class="head"><h2 id="glTitle">The room, the plate, the fire</h2><p class="muted">Select any photo to see it larger.</p></div>
+  <div class="g-grid">
+    <button type="button" class="shot g-wide" data-title="The dining room at dusk" data-big="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85"><img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Restaurant dining room with tables and warm lighting"></button>
+    <button type="button" class="shot g-wide" data-title="Dishes ready for the pass" data-big="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1800&q=85"><img loading="lazy" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="Several plated dishes on a table"></button>
+    <button type="button" class="shot g-sq" data-title="Fresh from the oven" data-big="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1400&q=85"><img loading="lazy" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Wood-fired flatbread fresh from the oven"></button>
+    <button type="button" class="shot g-sq" data-title="Sharing plates" data-big="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1400&q=85"><img loading="lazy" src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80" alt="Shared plates of food on a table"></button>
+    <button type="button" class="shot g-sq" data-title="Dessert" data-big="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1400&q=85"><img loading="lazy" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80" alt="A colourful bowl of fresh food"></button>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section class="press" aria-label="Guest and press words">
+  <figure><blockquote>“The kind of place you plan the whole day around.”</blockquote><figcaption>Food critic, publication name</figcaption></figure>
+  <figure><blockquote>“Smoke, salt and a room that makes you stay.”</blockquote><figcaption>Magazine name</figcaption></figure>
+  <figure><blockquote>“Easily the best meal we had all year.”</blockquote><figcaption>Verified guest</figcaption></figure>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit" aria-labelledby="vsTitle">
+  <div class="visit-info">
+    <h2 id="vsTitle">Visit <em>us</em></h2>
+    <address class="addr">Street address goes here<br>City, Postcode</address>
+    <p class="actions"><a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&query=Ember+and+Salt" target="_blank" rel="noopener">Get directions<span class="sr"> (opens in a new tab)</span></a><a class="link" href="tel:+10000000000">Call +1 000 000 0000</a></p>
+    <table class="hours">
+      <caption class="sr">Opening hours</caption>
+      <tbody>
+        <tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr>
+        <tr data-day="2"><th scope="row">Tuesday</th><td>5:00 pm to 10:00 pm</td></tr>
+        <tr data-day="3"><th scope="row">Wednesday</th><td>5:00 pm to 10:00 pm</td></tr>
+        <tr data-day="4"><th scope="row">Thursday</th><td>5:00 pm to 10:00 pm</td></tr>
+        <tr data-day="5"><th scope="row">Friday</th><td>12:00 pm to 11:00 pm</td></tr>
+        <tr data-day="6"><th scope="row">Saturday</th><td>12:00 pm to 11:00 pm</td></tr>
+        <tr data-day="0"><th scope="row">Sunday</th><td>12:00 pm to 9:00 pm</td></tr>
+      </tbody>
+    </table>
+    <ul class="access">
+      <li><strong>Accessibility.</strong> Step-free entrance, accessible toilet and assistance dogs welcome.</li>
+      <li><strong>Getting here.</strong> Nearest parking and transport details go here.</li>
+      <li><strong>Families.</strong> Children are welcome and high chairs are available.</li>
+    </ul>
+  </div>
+  <figure class="visit-img"><img loading="lazy" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1100&q=80" alt="Inside the restaurant with tables laid and warm lighting"></figure>
+</section>
+
+<!-- RESERVE -->
+<section class="reserve" id="reserve" aria-labelledby="rsTitle">
+  <div class="reserve-info">
+    <h2 id="rsTitle">Reserve a <em>table</em></h2>
+    <p class="lead">Book online and we will confirm by email. For same-day bookings, groups of nine or more, or anything urgent, please call us.</p>
+    <ul class="notes">
+      <li>Tables are held for 15 minutes after your booking time.</li>
+      <li>Let us know at least 24 hours ahead if plans change.</li>
+      <li>Tell us about allergies in the notes so the kitchen can prepare.</li>
+    </ul>
+  </div>
+  <form id="form" class="card" novalidate>
+    <div class="two">
+      <label>Date<input type="date" name="date" id="date" required></label>
+      <label>Time<select name="time" id="time" required><option value="">Choose a date first</option></select></label>
+    </div>
+    <div class="two">
+      <label>Guests
+        <select name="guests" id="guests">
+          <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option value="9+">9 or more</option>
+        </select>
+      </label>
+      <label>Occasion <small>(optional)</small>
+        <select name="occasion" id="occasion">
+          <option value="">None</option><option>Birthday</option><option>Anniversary</option><option>Business</option><option>Private dining enquiry</option><option>Chef's table</option><option>Gift card enquiry</option>
+        </select>
+      </label>
+    </div>
+    <p class="info" id="groupInfo" hidden>For nine or more guests we may ask for a deposit. We will confirm the details by email.</p>
+    <label>Name<input type="text" name="name" autocomplete="name" required></label>
+    <div class="two">
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+    </div>
+    <label>Notes and allergies <small>(optional)</small><textarea name="notes" rows="3"></textarea></label>
+    <label class="sr" aria-hidden="true">Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <label class="check"><input type="checkbox" name="consent" required> I agree to Ember &amp; Salt using my details to manage this booking, as described in the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</label>
+    <p class="error" id="formError" role="alert"></p>
+    <button type="submit" class="btn">Request this table</button>
+    <p class="success" id="formOk" role="status" hidden>Thank you. We have your request and will confirm by email shortly.</p>
+  </form>
+</section>
+
+<!-- FAQ -->
+<section class="faq" aria-labelledby="fqTitle">
+  <h2 id="fqTitle">Good to know</h2>
+  <details><summary>Do you take walk-ins?</summary><p>Yes. The bar and a few tables are kept for walk-ins every evening, though a reservation is the safest way to guarantee a seat.</p></details>
+  <details><summary>Can you cater for dietary needs?</summary><p>Yes. Many dishes are vegetarian, vegan or gluten-free, and we are happy to adapt others. Please tell us when you book and again when you arrive.</p></details>
+  <details><summary>Is there a dress code?</summary><p>No. Come as you are.</p></details>
+  <details><summary>Can I order takeaway?</summary><p>Selected dishes are available to collect. Call us during opening hours to order.</p></details>
+  <details><summary>How do I cancel or change a booking?</summary><p>Reply to your confirmation email or call us, ideally at least 24 hours ahead.</p></details>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news" aria-labelledby="nwTitle">
+  <div><h2 id="nwTitle">Hear about the new menu first.</h2><p>One email when the menu changes or a special evening is announced.</p></div>
+  <form id="newsForm" novalidate>
+    <label class="sr" for="newsEmail">Email address</label>
+    <div class="news-row"><input type="email" id="newsEmail" autocomplete="email" placeholder="Your email address" required><button type="submit" class="btn btn-ink">Subscribe</button></div>
+    <label class="check"><input type="checkbox" id="newsConsent"> I agree to receive emails from Ember &amp; Salt and can unsubscribe at any time.</label>
+    <p class="error" id="newsError" role="alert"></p>
+    <p class="success" id="newsOk" role="status" hidden>You are on the list. Thank you.</p>
+  </form>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div><p class="foot-brand">Ember <span>&amp;</span> Salt</p><p class="foot-note">Street address goes here<br>City, Postcode</p></div>
+    <div><p class="k">Hours</p><p class="foot-note">Tuesday to Thursday, 5 pm to 10 pm<br>Friday and Saturday, 12 pm to 11 pm<br>Sunday, 12 pm to 9 pm<br>Closed Monday</p></div>
+    <div><p class="k">Contact</p><p class="foot-note"><a href="tel:+10000000000">+1 000 000 0000</a><br><a href="mailto:hello@embersalt.example">hello@embersalt.example</a><br><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> · <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></p></div>
+    <nav class="foot-links" aria-label="Footer"><a href="#menu">Menu</a><a href="#reserve">Reserve</a><a href="#visit">Visit</a><button type="button" data-legal="allergens">Allergens</button><button type="button" data-legal="privacy">Privacy</button><button type="button" data-legal="terms">Terms</button><button type="button" id="cookieSettings">Cookie settings</button></nav>
+  </div>
+  <p class="foot-legal">© <span id="year"></span> Ember &amp; Salt. All photography and content are protected by copyright. Preview photography from Unsplash.</p>
+</footer>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <button type="button" class="dlg-close" id="lbClose" aria-label="Close">✕</button>
+  <button type="button" class="lb-nav prev" id="lbPrev" aria-label="Previous photo">←</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button type="button" class="lb-nav next" id="lbNext" aria-label="Next photo">→</button>
+</dialog>
+
+<!-- Legal -->
+<dialog class="legal" id="legal" aria-label="Legal information">
+  <button type="button" class="dlg-close" id="legalClose" aria-label="Close">✕</button>
+  <section id="privacy" hidden>
+    <h2>Privacy Policy</h2>
+    <p>We collect the details you give us when you book or subscribe (name, email, phone, booking details and any notes) and use them to manage your reservation and, if you opt in, to send menu news. We do not sell your data. Booking details are kept only as long as needed to run the booking and meet legal duties.</p>
+    <p>Analytics load only if you accept them in the cookie banner. You can ask to access, correct or delete your data, or unsubscribe at any time, by emailing hello@embersalt.example.</p>
+    <p><small>Template text. Have it reviewed against the laws that apply to you (for example GDPR or NDPR) before launch.</small></p>
+  </section>
+  <section id="terms" hidden>
+    <h2>Terms of Use</h2>
+    <p>Reservations are held for 15 minutes after the booking time. Please let us know at least 24 hours ahead if your plans change. We may ask for a deposit for large groups, private dining and the chef's table, and we will state this in writing before you pay.</p>
+    <p>Menu items, prices and availability may change. Gift card validity and conditions are stated when you buy one. All content on this site belongs to Ember &amp; Salt unless stated otherwise.</p>
+    <p><small>Template text. Have it reviewed by a legal professional before launch.</small></p>
+  </section>
+  <section id="allergens" hidden>
+    <h2>Allergen notice</h2>
+    <p>Our dishes may contain or come into contact with celery, cereals containing gluten, crustaceans, eggs, fish, lupin, milk, molluscs, mustard, nuts, peanuts, sesame, soya and sulphites. Our kitchen shares equipment and cooking surfaces, so we cannot guarantee any dish is free of these.</p>
+    <p>Please tell your server about any allergy or intolerance before you order. Dietary labels on the menu are a guide only.</p>
+    <p><small>Template text. Replace with your own allergen information and check the rules where you operate before launch.</small></p>
+  </section>
+</dialog>
+
+<!-- Cookies -->
+<div class="cookie" id="cookie" role="region" aria-label="Cookie consent" hidden>
+  <p>We use essential storage to run this site. With your consent we may also use analytics to improve it. See the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</p>
+  <div class="cookie-actions"><button type="button" class="btn btn-sm btn-line" id="cookieNo">Decline</button><button type="button" class="btn btn-sm" id="cookieYes">Accept</button></div>
+</div>
+
+<!-- Mobile quick actions -->
+<div class="mbar" id="mbar"><a class="btn" href="#reserve">Reserve a table</a><a class="btn btn-line" href="tel:+10000000000">Call</a></div>
+
+<button type="button" class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

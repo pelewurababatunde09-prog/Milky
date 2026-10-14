@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamie Rowe — Front-End Developer</title>
+<meta name="description" content="Jamie Rowe is a front-end developer focused on design systems, performance and accessibility. See selected work, experience and get in touch.">
+<meta name="theme-color" content="#f2f1ed">
+<meta property="og:title" content="Jamie Rowe — Front-End Developer">
+<meta property="og:description" content="Fast, accessible interfaces that hold up in production. Open to roles.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2314161a'/%3E%3Ctext x='32' y='44' font-size='30' text-anchor='middle' fill='%23f2f1ed' font-family='monospace' font-weight='bold'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jamie Rowe","jobTitle":"Front-End Developer","url":"https://example.com","email":"hello@example.com","sameAs":["https://github.com","https://linkedin.com"],"knowsAbout":["HTML","CSS","JavaScript","TypeScript","React","Accessibility","Web performance"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="brand" aria-label="Jamie Rowe, back to top">Jamie Rowe<span>/front-end</span></a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#playground">Playground</a>
+    <a href="#experience">Experience</a>
+    <a href="#toolbox">Toolbox</a>
+    <a href="#contact">Contact</a>
+    <a href="cv.pdf" class="btn btn-sm btn-ghost nav-cv" download>Download CV</a>
+  </nav>
+  <button type="button" class="nav-btn" id="navBtn" aria-expanded="false" aria-controls="nav" aria-label="Open navigation"><i></i><i></i></button>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div class="hero-main">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Open to full-time roles. Available now.</p>
+      <h1>I build fast, accessible interfaces that <em>hold up</em> in production.</h1>
+      <p class="sub">Front-end developer focused on design systems, performance and accessibility. I work closely with designers and back-end teams to ship things people actually enjoy using.</p>
+      <div class="actions">
+        <a class="btn" href="#work">See my work</a>
+        <a class="btn btn-ghost" href="cv.pdf" download>Download CV</a>
+        <a class="link" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="Portrait of Jamie Rowe, front-end developer" width="800" height="1000" fetchpriority="high">
+      <figcaption>Jamie Rowe, front-end developer</figcaption>
+    </figure>
+  </div>
+  <dl class="facts">
+    <div><dt>Role</dt><dd>Front-end developer</dd></div>
+    <div><dt>Stack</dt><dd>React, TypeScript, modern CSS</dd></div>
+    <div><dt>Looking for</dt><dd>Full-time or contract, remote or hybrid</dd></div>
+    <div><dt>Based in</dt><dd>City, Country. Works across time zones.</dd></div>
+  </dl>
+</section>
+
+<!-- ABOUT -->
+<section class="about wrap" id="about" aria-labelledby="abTitle">
+  <div class="about-text">
+    <h2 id="abTitle">A developer who sweats the <em>details.</em></h2>
+    <p>I like the part of the job where a design becomes a real interface: the focus states, the empty states, the way a page behaves on a slow connection. I care about code the next person can read.</p>
+    <p>I have shipped dashboards, marketing sites and an internal component library. I enjoy turning rough ideas into something fast, tested and accessible, and I explain my decisions in plain language.</p>
+  </div>
+  <div class="now">
+    <h3>Right now</h3>
+    <dl>
+      <div><dt>Building</dt><dd>A keyboard-first data table component</dd></div>
+      <div><dt>Learning</dt><dd>View transitions and container queries</dd></div>
+      <div><dt>Reading</dt><dd>Inclusive Components</dd></div>
+      <div><dt>Away from the keyboard</dt><dd>Running, film photography, strong coffee</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work wrap" id="work" aria-labelledby="wkTitle">
+  <div class="head row">
+    <div><h2 id="wkTitle">Selected work</h2><p class="muted">Each project has a short case study: the problem, what I did and what changed.</p></div>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" class="chip" aria-pressed="true" data-filter="all">All</button>
+      <button type="button" class="chip" aria-pressed="false" data-filter="product">Products</button>
+      <button type="button" class="chip" aria-pressed="false" data-filter="systems">Systems</button>
+      <button type="button" class="chip" aria-pressed="false" data-filter="open-source">Open source</button>
+    </div>
+  </div>
+  <p class="sr" id="workCount" role="status" aria-live="polite"></p>
+
+  <div class="projects" id="projects">
+    <article class="project" data-cat="product">
+      <div class="frame" data-case="tidewise"><img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Analytics dashboard displayed on a laptop screen"></div>
+      <div class="p-body">
+        <p class="mono">Product · React, TypeScript</p>
+        <h3>Tidewise</h3>
+        <p>A planning dashboard for freight teams that replaces a pile of spreadsheets with one fast, searchable view.</p>
+        <div class="p-actions">
+          <button type="button" class="link" data-case="tidewise">Read case study</button>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">Live site<span class="sr"> (opens in a new tab)</span></a>
+          <a class="link" href="https://github.com" target="_blank" rel="noopener">Code<span class="sr"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </article>
+    <article class="project" data-cat="systems">
+      <div class="frame" data-case="kiln"><img loading="lazy" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80" alt="Designer's desk with colour swatches and interface sketches"></div>
+      <div class="p-body">
+        <p class="mono">Systems · Storybook, CSS tokens</p>
+        <h3>Kiln</h3>
+        <p>A small design system with documented tokens, accessible components and a changelog teams actually read.</p>
+        <div class="p-actions">
+          <button type="button" class="link" data-case="kiln">Read case study</button>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">Live site<span class="sr"> (opens in a new tab)</span></a>
+          <a class="link" href="https://github.com" target="_blank" rel="noopener">Code<span class="sr"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </article>
+    <article class="project" data-cat="product">
+      <div class="frame" data-case="parley"><img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Team collaborating around laptops at a table"></div>
+      <div class="p-body">
+        <p class="mono">Product · Next.js, WebSockets</p>
+        <h3>Parley</h3>
+        <p>Realtime team chat with offline support and a calm, readable interface.</p>
+        <div class="p-actions">
+          <button type="button" class="link" data-case="parley">Read case study</button>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">Live site<span class="sr"> (opens in a new tab)</span></a>
+          <a class="link" href="https://github.com" target="_blank" rel="noopener">Code<span class="sr"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </article>
+    <article class="project" data-cat="open-source">
+      <div class="frame" data-case="tabula"><img loading="lazy" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Source code displayed on a monitor"></div>
+      <div class="p-body">
+        <p class="mono">Open source · TypeScript, accessibility</p>
+        <h3>Tabula</h3>
+        <p>An accessible data table library with sorting, filtering and full keyboard support.</p>
+        <div class="p-actions">
+          <button type="button" class="link" data-case="tabula">Read case study</button>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">Docs<span class="sr"> (opens in a new tab)</span></a>
+          <a class="link" href="https://github.com" target="_blank" rel="noopener">Code<span class="sr"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PLAYGROUND -->
+<section class="play wrap" id="playground" aria-labelledby="plTitle">
+  <div class="head"><h2 id="plTitle">Playground</h2><p class="muted">Tweak this component and copy the CSS. It is how I think about design tokens: small values, one source of truth.</p></div>
+  <div class="play-grid">
+    <div class="play-left">
+      <div class="stage">
+        <article class="demo" id="demo">
+          <p class="mono">New</p>
+          <h3>Release notes</h3>
+          <p>Short supporting text that wraps naturally and stays readable at any width.</p>
+          <button type="button" class="demo-btn">Read more</button>
+        </article>
+      </div>
+      <div class="controls">
+        <label>Radius <output id="outRadius">12px</output><input type="range" id="pgRadius" min="0" max="32" value="12"></label>
+        <label>Padding <output id="outPad">20px</output><input type="range" id="pgPad" min="8" max="40" value="20"></label>
+        <fieldset>
+          <legend>Accent</legend>
+          <div class="swatches">
+            <label class="sw" style="--c:#2a4bff"><input type="radio" name="accent" value="#2a4bff" checked><span class="sr">Blue</span></label>
+            <label class="sw" style="--c:#1f8a4c"><input type="radio" name="accent" value="#1f8a4c"><span class="sr">Green</span></label>
+            <label class="sw" style="--c:#c2461f"><input type="radio" name="accent" value="#c2461f"><span class="sr">Rust</span></label>
+            <label class="sw" style="--c:#14161a"><input type="radio" name="accent" value="#14161a"><span class="sr">Ink</span></label>
+          </div>
+        </fieldset>
+        <label class="check"><input type="checkbox" id="pgOutline"> Outlined button</label>
+      </div>
+    </div>
+    <div class="code">
+      <div class="code-top"><span class="mono">card.css</span><button type="button" class="copy" id="copyCss">Copy CSS</button></div>
+      <pre><code id="pgCode"></code></pre>
+      <p class="sr" id="copyMsg" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="exp wrap" id="experience" aria-labelledby="exTitle">
+  <div class="head"><h2 id="exTitle">Experience</h2></div>
+  <ul class="rows">
+    <li><p class="when mono">2023 to present</p><div><h3>Front-end developer, Northfield Labs</h3><ul class="bul"><li>Lead front-end work on the customer dashboard, from planning to release.</li><li>Introduced a shared component library used by three product teams.</li><li>Added accessibility and performance checks to the CI pipeline.</li></ul></div></li>
+    <li><p class="when mono">2021 to 2023</p><div><h3>Junior front-end developer, Brightpath Agency</h3><ul class="bul"><li>Built responsive marketing sites and web apps for a range of clients.</li><li>Turned design prototypes into production builds with the design team.</li><li>Improved Core Web Vitals across client sites.</li></ul></div></li>
+    <li><p class="when mono">2019 to 2021</p><div><h3>Freelance web developer</h3><ul class="bul"><li>Designed and built websites for small businesses.</li><li>Handled hosting, handover and training for non-technical owners.</li></ul></div></li>
+    <li><p class="when mono">Education</p><div><h3>BSc Computer Science, University name</h3><ul class="bul"><li>Add certifications, courses or bootcamps that matter to the roles you want.</li></ul></div></li>
+  </ul>
+</section>
+
+<!-- TOOLBOX -->
+<section class="tool wrap" id="toolbox" aria-labelledby="tlTitle">
+  <div class="head"><h2 id="tlTitle">How I work, and what I use</h2></div>
+  <div class="principles">
+    <article><h3>Accessible by default</h3><p>Semantic HTML first, keyboard testing as I build and a screen reader check before anything ships.</p></article>
+    <article><h3>Measured, not guessed</h3><p>I look at real performance data before optimising, and I check again afterwards.</p></article>
+    <article><h3>Small, reviewable changes</h3><p>Short pull requests with clear descriptions are easier to review and easier to roll back.</p></article>
+  </div>
+  <div class="stack">
+    <div><h3>Languages</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li></ul></div>
+    <div><h3>Frameworks</h3><ul><li>React</li><li>Next.js</li><li>Vue</li><li>Astro</li></ul></div>
+    <div><h3>Quality</h3><ul><li>Vitest</li><li>Testing Library</li><li>Playwright</li><li>axe</li></ul></div>
+    <div><h3>Tooling</h3><ul><li>Git</li><li>Vite</li><li>Storybook</li><li>Figma</li></ul></div>
+  </div>
+</section>
+
+<!-- WORDS -->
+<section class="words" aria-label="What colleagues say">
+  <figure><blockquote>“Jamie fixed things we had stopped noticing, and explained every change so the whole team learned from it.”</blockquote><figcaption>Engineering manager, Northfield Labs</figcaption></figure>
+  <figure><blockquote>“The most careful handoff between design and code I have worked with.”</blockquote><figcaption>Product designer, Brightpath Agency</figcaption></figure>
+  <figure><blockquote>“Quick to learn, calm under deadlines and always asking the right questions.”</blockquote><figcaption>Tech lead, Northfield Labs</figcaption></figure>
+</section>
+
+<!-- WRITING -->
+<section class="writing wrap" aria-labelledby="wrTitle">
+  <div class="head"><h2 id="wrTitle">Writing</h2><p class="muted">Notes on things I have learned the hard way.</p></div>
+  <ul class="posts">
+    <li><a href="https://example.com/keyboard-audit"><span class="mono">Accessibility · 6 min read</span><strong>How I audit a component for keyboard access</strong></a></li>
+    <li><a href="https://example.com/bundle-diet"><span class="mono">Performance · 8 min read</span><strong>Cutting a bundle in half without a rewrite</strong></a></li>
+    <li><a href="https://example.com/flat-css"><span class="mono">CSS · 5 min read</span><strong>Why I stopped nesting my CSS</strong></a></li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="contact wrap" id="contact" aria-labelledby="ctTitle">
+  <div class="contact-info">
+    <h2 id="ctTitle">Let's <em>talk.</em></h2>
+    <p class="lead">I reply to every message within two working days. The fastest way to reach me is email.</p>
+    <div class="mail">
+      <a href="mailto:hello@example.com" id="mailText">hello@example.com</a>
+      <button type="button" class="copy" id="copyMail">Copy email</button>
+    </div>
+    <p class="sr" id="mailMsg" role="status" aria-live="polite"></p>
+    <dl class="looking">
+      <div><dt>Roles</dt><dd>Front-end, UI engineer, design systems</dd></div>
+      <div><dt>Type</dt><dd>Full-time or contract</dd></div>
+      <div><dt>Work style</dt><dd>Remote, hybrid or on-site in City</dd></div>
+      <div><dt>Available</dt><dd>Now</dd></div>
+    </dl>
+    <p class="social"><a class="link" href="https://github.com" target="_blank" rel="noopener">GitHub<span class="sr"> (opens in a new tab)</span></a><a class="link" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn<span class="sr"> (opens in a new tab)</span></a><a class="link" href="cv.pdf" download>Download CV</a></p>
+  </div>
+  <form id="form" class="card" novalidate>
+    <label>Name<input type="text" name="name" autocomplete="name" required></label>
+    <div class="two">
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Company <small>(optional)</small><input type="text" name="company" autocomplete="organization"></label>
+    </div>
+    <label>This is about
+      <select name="topic"><option>A full-time role</option><option>Contract work</option><option>A collaboration</option><option>Something else</option></select>
+    </label>
+    <label>Message<textarea name="message" rows="5" required></textarea></label>
+    <label class="sr" aria-hidden="true">Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <label class="check"><input type="checkbox" name="consent" required> I agree to my details being used to reply to this message, as described in the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</label>
+    <p class="error" id="formError" role="alert"></p>
+    <button type="submit" class="btn">Send message</button>
+    <p class="success" id="formOk" role="status" hidden>Thank you. Your message has been received and I will reply within two working days.</p>
+  </form>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="foot wrap">
+    <p class="foot-note">Built by hand with plain HTML, CSS and JavaScript. No trackers unless you accept analytics.</p>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <button type="button" data-legal="accessibility">Accessibility</button>
+      <button type="button" data-legal="privacy">Privacy</button>
+      <button type="button" data-legal="terms">Terms</button>
+      <button type="button" id="cookieSettings">Cookie settings</button>
+    </nav>
+  </div>
+  <p class="foot-legal wrap">© <span id="year"></span> Jamie Rowe. All content is protected by copyright. Preview photography from Unsplash.</p>
+</footer>
+
+<!-- CASE STUDY DIALOG -->
+<dialog class="case" id="caseDialog" aria-label="Case study">
+  <button type="button" class="dlg-close" id="caseClose" aria-label="Close case study">✕</button>
+
+  <article id="case-tidewise" hidden>
+    <p class="mono">Case study · Product</p>
+    <h2>Tidewise</h2>
+    <dl class="meta"><div><dt>Role</dt><dd>Lead front-end developer</dd></div><div><dt>Timeline</dt><dd>Eight months</dd></div><div><dt>Stack</dt><dd>React, TypeScript, TanStack Query</dd></div></dl>
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80" alt="Analytics dashboard displayed on a laptop screen" loading="lazy">
+    <h3>The problem</h3><p>Dispatchers were juggling several spreadsheets and losing time reconciling them every morning.</p>
+    <h3>What I did</h3><p>Built a keyboard-first table with virtualised rows, optimistic updates and clear loading and error states. Worked with the designers on a shared component set.</p>
+    <h3>The outcome</h3><p>Faster daily workflows for the operations team and fewer support requests about missing data. Add your own measured results here.</p>
+    <p class="case-links"><a class="btn" href="https://example.com" target="_blank" rel="noopener">View live site<span class="sr"> (opens in a new tab)</span></a><a class="link" href="https://github.com" target="_blank" rel="noopener">Source code<span class="sr"> (opens in a new tab)</span></a></p>
+  </article>
+
+  <article id="case-kiln" hidden>
+    <p class="mono">Case study · Systems</p>
+    <h2>Kiln</h2>
+    <dl class="meta"><div><dt>Role</dt><dd>Design system developer</dd></div><div><dt>Timeline</dt><dd>Six months</dd></div><div><dt>Stack</dt><dd>Storybook, CSS custom properties, Web components</dd></div></dl>
+    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1400&q=80" alt="Designer's desk with colour swatches and interface sketches" loading="lazy">
+    <h3>The problem</h3><p>Three product teams were building the same buttons, modals and form fields in slightly different ways.</p>
+    <h3>What I did</h3><p>Defined colour, spacing and type tokens, built accessible components with keyboard and screen reader tests, and documented usage in Storybook with a plain-language changelog.</p>
+    <h3>The outcome</h3><p>A shared foundation teams could adopt gradually, with fewer visual inconsistencies and faster builds. Add your own measured results here.</p>
+    <p class="case-links"><a class="btn" href="https://example.com" target="_blank" rel="noopener">View live site<span class="sr"> (opens in a new tab)</span></a><a class="link" href="https://github.com" target="_blank" rel="noopener">Source code<span class="sr"> (opens in a new tab)</span></a></p>
+  </article>
+
+  <article id="case-parley" hidden>
+    <p class="mono">Case study · Product</p>
+    <h2>Parley</h2>
+    <dl class="meta"><div><dt>Role</dt><dd>Front-end developer</dd></div><div><dt>Timeline</dt><dd>Five months</dd></div><div><dt>Stack</dt><dd>Next.js, WebSockets, IndexedDB</dd></div></dl>
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Team collaborating around laptops at a table" loading="lazy">
+    <h3>The problem</h3><p>Distributed teams needed a chat tool that still worked on poor connections and did not feel noisy.</p>
+    <h3>What I did</h3><p>Built realtime messaging with offline queueing, a calm information hierarchy and full keyboard navigation between channels.</p>
+    <h3>The outcome</h3><p>A reliable experience on slow networks and positive feedback from early testers on readability. Add your own measured results here.</p>
+    <p class="case-links"><a class="btn" href="https://example.com" target="_blank" rel="noopener">View live site<span class="sr"> (opens in a new tab)</span></a><a class="link" href="https://github.com" target="_blank" rel="noopener">Source code<span class="sr"> (opens in a new tab)</span></a></p>
+  </article>
+
+  <article id="case-tabula" hidden>
+    <p class="mono">Case study · Open source</p>
+    <h2>Tabula</h2>
+    <dl class="meta"><div><dt>Role</dt><dd>Author and maintainer</dd></div><div><dt>Timeline</dt><dd>Ongoing</dd></div><div><dt>Stack</dt><dd>TypeScript, ARIA, Vitest</dd></div></dl>
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80" alt="Source code displayed on a monitor" loading="lazy">
+    <h3>The problem</h3><p>Most table libraries look good in demos but break for keyboard and screen reader users.</p>
+    <h3>What I did</h3><p>Built a small, well-tested table with sorting, filtering and arrow-key navigation, following the ARIA authoring practices and documenting every behaviour.</p>
+    <h3>The outcome</h3><p>A library other developers can drop in without losing accessibility. Add your own stars, downloads or contributor counts here.</p>
+    <p class="case-links"><a class="btn" href="https://example.com" target="_blank" rel="noopener">Read the docs<span class="sr"> (opens in a new tab)</span></a><a class="link" href="https://github.com" target="_blank" rel="noopener">Source code<span class="sr"> (opens in a new tab)</span></a></p>
+  </article>
+</dialog>
+
+<!-- LEGAL DIALOG -->
+<dialog class="legal" id="legal" aria-label="Legal information">
+  <button type="button" class="dlg-close" id="legalClose" aria-label="Close">✕</button>
+  <section id="privacy" hidden>
+    <h2>Privacy Policy</h2>
+    <p>This site collects only what you send through the contact form (name, email, optional company and your message) and uses it to reply to you. I do not sell or share your data. Messages are kept only as long as needed to handle the conversation.</p>
+    <p>Analytics load only if you accept them in the cookie banner. You can ask me to access, correct or delete your data at any time by emailing hello@example.com.</p>
+    <p><small>Template text. Have it reviewed against the laws that apply to you (for example GDPR or NDPR) before launch.</small></p>
+  </section>
+  <section id="terms" hidden>
+    <h2>Terms of Use</h2>
+    <p>The text, design and code of this site belong to Jamie Rowe unless stated otherwise. Project descriptions describe my own contribution and may reference work done for employers or clients with their permission.</p>
+    <p>Third-party names and trademarks belong to their owners. This site is provided as is, without warranty.</p>
+    <p><small>Template text. Have it reviewed by a legal professional before launch.</small></p>
+  </section>
+  <section id="accessibility" hidden>
+    <h2>Accessibility statement</h2>
+    <p>I aim for this site to meet WCAG 2.2 level AA. It uses semantic HTML, works with a keyboard and screen readers, respects reduced-motion settings and keeps colour contrast at readable levels.</p>
+    <p>If you hit a barrier, please email hello@example.com and I will do my best to fix it quickly.</p>
+    <p><small>Template text. Test with your own content and update this statement honestly.</small></p>
+  </section>
+</dialog>
+
+<!-- COOKIES -->
+<div class="cookie" id="cookie" role="region" aria-label="Cookie consent" hidden>
+  <p>I use essential storage to run this site. With your consent I may also use analytics to improve it. See the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</p>
+  <div class="cookie-actions"><button type="button" class="btn btn-sm btn-ghost" id="cookieNo">Decline</button><button type="button" class="btn btn-sm" id="cookieYes">Accept</button></div>
+</div>
+
+<button type="button" class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

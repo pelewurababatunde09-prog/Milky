@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soren Hale — Cinematic Photographer</title>
+  <meta name="description" content="Soren Hale is a cinematic photographer creating film-like portraits, landscapes and street stories. Available worldwide.">
+  <meta name="theme-color" content="#0a0b0c">
+  <meta property="og:title" content="Soren Hale — Cinematic Photographer">
+  <meta property="og:description" content="Film-like stills. Selected work, packages and bookings.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <a href="#top" class="logo">Soren Hale</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i></i><i></i></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">Director's note</a>
+      <a href="#process">Process</a>
+      <a href="#rates">Packages</a>
+      <a href="#contact" class="btn btn-sm">Book a shoot</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: letterboxed stage -->
+    <section class="hero" id="top">
+      <div class="stage">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=2000&q=80" alt="Foggy mountain valley at dawn" fetchpriority="high">
+        <div class="title">
+          <p class="eyebrow">A photographer for stories without a script</p>
+          <h1>Stillness,<br><em>framed like film.</em></h1>
+        </div>
+      </div>
+      <div class="bar">
+        <p class="bar-text">Portrait · Landscape · Street<br><span>Available worldwide</span></p>
+        <div class="actions">
+          <a href="#work" class="link">Watch the reel →</a>
+          <a href="#contact" class="btn">Book a shoot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+      <p>Every frame is composed like a scene: <em>one light, one moment, one feeling.</em> I work slowly, in natural light, and let people be unguarded.</p>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>Selected stills</h2>
+        <div class="filters" role="group" aria-label="Filter work">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="portrait">Portrait</button>
+          <button class="chip" data-filter="landscape">Landscape</button>
+          <button class="chip" data-filter="street">Street</button>
+        </div>
+      </div>
+
+      <div class="work" id="workGrid">
+        <button class="shot" data-cat="landscape" data-title="The Long Way Home" data-big="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=85">
+          <span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80" alt="Sunrise over a misty valley"></span>
+          <span class="cap">The Long Way Home <i>Landscape</i></span>
+        </button>
+        <button class="shot" data-cat="portrait" data-title="Afterglow" data-big="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1800&q=85">
+          <span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1000&q=80" alt="Portrait of a woman in soft window light"></span>
+          <span class="cap">Afterglow <i>Portrait</i></span>
+        </button>
+        <button class="shot" data-cat="street" data-title="Neon Static" data-big="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1800&q=85">
+          <span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1000&q=80" alt="City street at night with lights"></span>
+          <span class="cap">Neon Static <i>Street</i></span>
+        </button>
+        <button class="shot" data-cat="portrait" data-title="Unspoken" data-big="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1800&q=85">
+          <span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Portrait of a bearded man in natural light"></span>
+          <span class="cap">Unspoken <i>Portrait</i></span>
+        </button>
+        <button class="shot" data-cat="landscape" data-title="Cold Open" data-big="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85">
+          <span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Mountain range under a pale sky"></span>
+          <span class="cap">Cold Open <i>Landscape</i></span>
+        </button>
+        <button class="shot" data-cat="street" data-title="Concrete Hours" data-big="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1800&q=85">
+          <span class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=80" alt="Aerial view of a dense city skyline"></span>
+          <span class="cap">Concrete Hours <i>Street</i></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <figure class="about-img">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=80" alt="Vintage camera resting on a table" width="1400" height="933">
+      </figure>
+      <div class="about-text">
+        <h2>Director's <em>note</em></h2>
+        <p>I came to photography through cinema. I still think in scenes, in colour palettes, in what happens just outside the edge of the frame. My images are quiet on purpose, muted in colour and patient in rhythm.</p>
+        <p>My work has appeared in independent magazines, short-film campaigns and gallery shows. Every project begins with a conversation, because good images start with understanding the story.</p>
+        <blockquote>“It felt like being in a film, not in front of a camera. The images are exactly how that day felt.”Client testimonial, brand campaign</blockquote>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="section-head"><h2>How a shoot unfolds</h2></div>
+      <ol class="steps">
+        <li><h3>Brief</h3><p>We talk through the story, the mood and where the images will live.</p></li>
+        <li><h3>Scout</h3><p>I find the light and the location, and share a visual reference board.</p></li>
+        <li><h3>Shoot</h3><p>Calm, unhurried and mostly natural light, so you can be yourself.</p></li>
+        <li><h3>Grade</h3><p>Each frame is colour-graded by hand to one consistent, muted look.</p></li>
+        <li><h3>Deliver</h3><p>A private gallery with high-resolution files, ready to use.</p></li>
+      </ol>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section rates-wrap" id="rates">
+      <div class="section-head"><h2>Packages</h2></div>
+      <div class="rates">
+        <article class="rate">
+          <h3>Portrait</h3>
+          <p>A 60-minute session, one location, 15 graded images and a private gallery.</p>
+          <p class="price">From $350</p>
+          <a href="#contact" class="btn btn-ghost" data-service="Portrait">Enquire</a>
+        </article>
+        <article class="rate featured">
+          <h3>Editorial <span class="tag">Most booked</span></h3>
+          <p>A half-day shoot, up to two locations, 40 graded images and a usage licence included.</p>
+          <p class="price">From $900</p>
+          <a href="#contact" class="btn" data-service="Editorial">Enquire</a>
+        </article>
+        <article class="rate">
+          <h3>Campaign</h3>
+          <p>Full creative direction, travel available, extended licensing and a tailored shot list.</p>
+          <p class="price">Custom quote</p>
+          <a href="#contact" class="btn btn-ghost" data-service="Campaign">Enquire</a>
+        </article>
+      </div>
+      <p class="note">Prices are starting points. Only a limited number of shoots are taken each month, so earlier enquiries get first choice of dates.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="section-head"><h2>Good to know</h2></div>
+      <details><summary>How far in advance should I book?</summary><p>Four to six weeks is ideal for most sessions. For editorial and campaign work, please enquire earlier.</p></details>
+      <details><summary>When will I receive my images?</summary><p>Portrait galleries are delivered within 10 working days. Larger projects are scheduled individually.</p></details>
+      <details><summary>Can I use the images commercially?</summary><p>Personal use is included with portrait sessions. Commercial usage is covered by the licence in your editorial or campaign agreement.</p></details>
+      <details><summary>What is your cancellation policy?</summary><p>You can reschedule free of charge up to 72 hours before your shoot. A 30% deposit secures your date.</p></details>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div>
+        <h2>Let's frame<br><em>your story.</em></h2>
+        <p class="lead">Tell me about your idea. I reply to every enquiry within 48 hours.</p>
+        <p class="meta"><a href="mailto:hello@sorenhale.com">hello@sorenhale.com</a><br><a href="https://instagram.com" rel="noopener" target="_blank">Instagram</a> · <a href="https://behance.net" rel="noopener" target="_blank">Behance</a></p>
+      </div>
+      <form id="form" novalidate>
+        <label>Name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Shoot type
+          <select name="service" id="service"><option>Portrait</option><option>Editorial</option><option>Campaign</option><option>Something else</option></select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <label class="check"><input type="checkbox" name="consent" required> I agree to the processing of my details as described in the <button type="button" class="inline" data-legal="privacy">Privacy Policy</button>.</label>
+        <p class="error" id="formError" role="alert"></p>
+        <button type="submit" class="btn">Send enquiry</button>
+        <p class="success" id="formOk" role="status" hidden>Thank you. Your enquiry has been received and I'll reply within 48 hours.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Soren Hale Photography. All images are protected by copyright and may not be copied, downloaded or reused without written permission.</p>
+    <p class="legal-links">
+      <button class="inline" data-legal="privacy">Privacy</button>
+      <button class="inline" data-legal="terms">Terms</button>
+      <button class="inline" id="cookieSettings">Cookie settings</button>
+    </p>
+  </footer>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-nav prev" id="lbPrev" aria-label="Previous image">←</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-nav next" id="lbNext" aria-label="Next image">→</button>
+  </dialog>
+
+  <!-- Legal -->
+  <dialog class="legal" id="legal" aria-label="Legal information">
+    <button class="lb-close" id="legalClose" aria-label="Close">✕</button>
+    <section id="privacy" hidden>
+      <h2>Privacy Policy</h2>
+      <p>This website collects only the information you submit through the enquiry form (name, email, message) and uses it solely to reply to you. We do not sell your data. Data is kept only as long as needed to handle your enquiry and any resulting booking.</p>
+      <p>Where analytics or similar cookies are used, they load only after you accept them in the cookie banner. You may request access to, correction of, or deletion of your data at any time by emailing hello@sorenhale.com.</p>
+      <p><small>Template text. Have it reviewed against the laws that apply to you (for example GDPR or NDPR) before launch.</small></p>
+    </section>
+    <section id="terms" hidden>
+      <h2>Terms of Use</h2>
+      <p>All photographs and content on this site are the property of Soren Hale unless stated otherwise and are protected by copyright. No image may be copied, edited, shared or used commercially without written permission.</p>
+      <p>Bookings are confirmed on receipt of a signed agreement and deposit. Prices on this site are guides and may change. Liability is limited to the fee paid for the relevant service.</p>
+      <p><small>Template text. Have it reviewed by a legal professional before launch.</small></p>
+    </section>
+  </dialog>
+
+  <!-- Cookie banner -->
+  <div class="cookie" id="cookie" role="region" aria-label="Cookie consent" hidden>
+    <p>I use essential cookies to run this site. With your consent, I may also use analytics to improve it. See the <button class="inline" data-legal="privacy">Privacy Policy</button>.</p>
+    <div><button class="btn btn-sm btn-ghost" id="cookieNo">Decline</button><button class="btn btn-sm" id="cookieYes">Accept</button></div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
